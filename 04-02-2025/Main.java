@@ -27,9 +27,9 @@ public class Main {
 
         students.add(new Student(id, name, email));
 
-        for (Student student : students) {
-            student.displayDetails();
-        }
+
+    }for (Student student : students) {
+        student.displayDetails();
     }
 }
 

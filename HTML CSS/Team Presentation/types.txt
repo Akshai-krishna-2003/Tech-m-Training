@@ -1,0 +1,64 @@
+#INLINE CSS#
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inline CSS Example</title>
+</head>
+<body>
+  <h1 style="color: blue; font-size: 24px;">This is an inline CSS example</h1>
+</body>
+</html>
+
+
+#INTERNAL CSS#
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Internal CSS Example</title>
+  <style>
+    h1 {
+      color: green;
+      font-size: 28px;
+    }
+    p {
+      color: gray;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is an internal CSS example</h1>
+  <p>Internal CSS styles multiple elements on this page.</p>
+</body>
+</html>
+
+
+#EXTERNAL CSS#
+
+EXT.HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>External CSS Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>This is an external CSS example</h1>
+  <p>External CSS keeps styling separate and reusable.</p>
+</body>
+</html>
+
+STYLE.CSS
+
+h1 {
+  color: red;
+  font-size: 32px;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+}
