@@ -1,0 +1,70 @@
+<!-- Get the price of 1 kg tomato from Monday to Sunday, find its average. If the average is greater than Rs.50, then display, tomato has given good profit. If not, display "No profit from tomato". -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 8</title>
+    </head>
+    <body>
+        <h1>Enter price of 1 kg tomato for a week</h1>
+        <form onsubmit="return val1()">
+
+            <label>Enter for Monday: </label>
+            <input type="number" id="monday" name="monday" required />
+            <br>
+
+            <label>Enter for Tuesday: </label>
+            <input type="number" id="tuesday" name="tuesday" required />
+            <br>
+
+            <label>Enter for Wednesday: </label>
+            <input type="number" id="wednesday" name="wednesday" required />
+            <br>
+
+            <label>Enter for Thursday: </label>
+            <input type="number" id="thursday" name="thursday" required />
+            <br>
+
+            <label>Enter for Friday: </label>
+            <input type="number" id="friday" name="friday" required />
+            <br>
+
+            <label>Enter for Saturday: </label>
+            <input type="number" id="saturday" name="saturday" required />
+            <br>
+
+            <label>Enter for Sunday: </label>
+            <input type="number" id="sunday" name="sunday" required />
+            <br><br>
+
+            <input type="submit" value="Sumbit" onsubmit="val1()">
+
+        </form>
+
+        <p id="av"></p>
+
+        <script>
+            function val1(event){
+                var d1 = parseFloat(document.getElementById("monday").value)
+                var d2 = parseFloat(document.getElementById("tuesday").value)
+                var d3 = parseFloat(document.getElementById("wednesday").value)
+                var d4 = parseFloat(document.getElementById("thursday").value)
+                var d5 = parseFloat(document.getElementById("friday").value)
+                var d6 = parseFloat(document.getElementById("saturday").value)
+                var d7 = parseFloat(document.getElementById("sunday").value)
+
+                var avg = (d1+d2+d3+d4+d5+d6+d7)/7
+
+                if (avg > 50){
+                    alert("Tomato has given good profit")
+                }
+                else{
+                    alert("No profits from tomato")
+                }
+
+                document.getElementById("av").innerHTML = "Average is: Rs. "+avg
+                return false
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!-- Create a confirmation box , to check if the user will go the film today and display the result -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task 5</title>
+    </head>
+    <body>
+        <button onclick="cBox()">Click me</button>
+        <script>
+            function cBox(){
+                var x = confirm("Are you going fo a movie?")
+
+                if (x===true){
+                    alert("Enjoy your movie!")
+                }
+                else{
+                    alert("Plan a movie")
+                }
+            }
+        </script>
+    </body>
+</html>

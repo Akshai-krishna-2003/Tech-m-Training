@@ -1,0 +1,11 @@
+React - JavaScript library 
+Font end library 
+
+React help to develop single page application
+
+node.js
+npm
+
+jsx - javascript xml
+
+1. Components

@@ -1,0 +1,41 @@
+<!-- Get the values of year and month. Check if the year is leap year. If yes, check if the month is February. If yes, display "The year is leap year and the month is February with 29 days.". If no, display "The year is leap year and the month is not February ". If the year is not leap, display "The given year is not a leap year". -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 9</title>
+    </head>
+    <body>
+        <h1>Task 9</h1>
+        <form onsubmit = "datesVal()">
+            <label>Select a date: </label><br><br>
+            <input type = "date" id = "dte" required /><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
+        
+        <script>
+            function datesVal(){
+                var dip = document.getElementById("dte").value
+                var dval = new Date(dip)
+
+                var year = dval.getFullYear()
+                var month = dval.getMonth()
+
+                // Check if it's a leap year
+                var isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+
+                if (isLeap) {
+                    if (month === 1) { // February is month 1 (0-based)
+                        alert("The year is a leap year and the month is February with 29 days.");
+                    } else {
+                        alert("The year is a leap year, but the month is not February.");
+                    }
+                } else {
+                    alert("The given year is not a leap year.");
+                }
+
+            }
+        </script>
+
+    </body>
+</html>

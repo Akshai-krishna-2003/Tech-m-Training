@@ -1,0 +1,41 @@
+nitParamExample.java
+
+public class InitParamExample extends HttpServlet {   
+      
+      protected void doGet(HttpServletRequest request, 
+        HttpServletResponse response)
+              throws ServletException, IOException {
+    response.setContentType("text/html");
+PrintWriter out = response.getWriter();      
+        ServletConfig config=getServletConfig();        
+        String address = config.getInitParameter("address");
+	String email = config.getInitParameter("email");
+	String phone = config.getInitParameter("phone");
+out.print("Address: " + address + "\n");
+	out.print("Email: " + email + "\n");
+	out.print("Phone: " + phone + "");
+        
+        out.close();     }}
+web.xml
+
+<servlet>
+    <servlet-name>InitParamExample</servlet-name>
+    <servlet-class>
+        mypack.InitParamExample
+    </servlet-class>
+Banu Manoharan
+10:49
+<init-param>
+        <param-name>address</param-name>
+        <param-value>Chennai</param-value>
+        <param-name>email</param-name>
+        <param-value>abcd@gmail.com</param-value>
+	<param-name>phone</param-name>
+        <param-value>9384564715</param-value>
+9384564715
+    </init-param>
+  </servlet>
+<servlet-mapping>
+    <servlet-name>InitParamExample</servlet-name>
+    <url-pattern>/InitParamExample</url-pattern>
+  </servlet-mapping>

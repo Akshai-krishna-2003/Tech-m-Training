@@ -1,0 +1,35 @@
+<!-- Check for a number, if its divisible by 12 using if statement -->
+
+<html>
+    <head>
+        <title>Task 7</title>
+    </head>
+    <body>
+        <h2>Task 07</h2>
+        <button onclick="task7()">Click me!</button>
+        <p id="p"></p>
+        <script>
+            var t = ""
+            function task7(){
+                var p = prompt("Enter a digit","12")
+
+                if (p===null || p==="" || isNaN(p)){
+                    t = "This is not a number"
+                    alert(t)
+                }
+                else{
+                    p = Number(p)
+
+                    if (p%12 == 0){
+                        t = p+" is divisible by 12"
+                    }
+                    else{
+                        t = p + " is not divisible by 12"
+                    }
+                }
+
+                document.getElementById("p").innerHTML = t
+            }
+        </script>
+    </body>
+</html>

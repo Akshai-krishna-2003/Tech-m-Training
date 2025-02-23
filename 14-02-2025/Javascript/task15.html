@@ -1,0 +1,39 @@
+<!-- Get 2 numbers with interval 50. For example 10,60. Display the values from 10 to 60, but skip displaying the multiples of 5. -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task 15</title>
+    </head>
+    <body>
+        <h1>Enter numbers</h1>
+        <p id="a"></p>
+        <button onclick="f1()">Click Me!</button>
+        <script>
+            function f1(){
+                var p1 = prompt("Enter 1st value ")
+                var p2 = prompt("Enter 2nd value ")
+
+                if (p1 == "" || p1 == null || isNaN(p1) || p2 == "" || p2 == null || isNaN(p2)){
+                    alert("Some problem with inputs")
+                    return;
+                }
+                else{
+                    p1 = parseFloat(p1)
+                    p2 = parseFloat(p2)
+                    var txt = ""
+
+                    for (let i = p1; i < p2; i++){
+                        if (i % 5 === 0){
+                            continue;
+                        }
+                        txt += i+"<br>"
+                    }
+
+                    document.getElementById("a").innerHTML = txt
+                }
+            }
+        </script>
+    </body>
+</html>

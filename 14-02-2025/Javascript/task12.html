@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <button onclick="generateTable()">Click to Generate Table</button>
+    <p id="p"></p>
+
+    <script>
+        function generateTable() {
+            let num1 = prompt("Enter the number for multiplication:");
+            let num2 = prompt("Enter the range till which to multiply:");
+
+            // Convert inputs to numbers
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            // Validate inputs
+            if (isNaN(num1) || isNaN(num2) || num2 < 1) {
+                alert("Please enter valid positive numbers.");
+                return;
+            }
+
+            let result = "Multiplication Table for " + num1 + " till " + num2 + ":\n";
+            
+            for (let i = 1; i <= num2; i++) {
+                result += `${num1} * ${i} = ${num1 * i}\n`;
+            }
+
+
+            document.getElementById("p").innerHTML = result
+            alert(result); // Show the table in an alert box
+        }
+    </script>
+</body>
+</html>

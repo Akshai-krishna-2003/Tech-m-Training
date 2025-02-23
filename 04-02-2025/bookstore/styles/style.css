@@ -1,0 +1,323 @@
+body {
+    background-image: url('/images/bg-pic.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+#main-title{
+    color: white;
+    text-align: center;         
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#book-list{
+    color: white;
+    text-align: center;         
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#c-us{
+    color: white;
+    text-align: center;         
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+nav {
+    background-color: #3e3c29;  /* Primary color */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Responsive Navigation (for mobile devices) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+}
+
+#intro-para {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;        /* Adjust text size */
+    line-height: 1.8;         /* Better readability */
+    color: #333;              /* Text color */
+    text-align: center;       /* Center the text */
+    padding: 20px;            /* Space around the text */
+    background-color: #d2dea3; /* Light background */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;         /* Limit width */
+    margin: 20px auto;        /* Center on the page */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;            /* Dark background */
+    color: white;                      /* White text */
+    text-align: center;                /* Center-align the text */
+    padding: 20px 0;                   /* Vertical padding */
+    width: 100%;                       /* Full-width footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+    position: relative;
+    bottom: 0;
+}
+
+/* Paragraph inside the footer */
+.foot-val {
+    margin: 0;
+    font-size: 0.9rem;                 /* Slightly smaller text */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer link styles (if added in future) */
+footer a {
+    color: #007bff;                    /* Optional link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8rem;             /* Reduce font size on smaller screens */
+        padding: 15px 0;
+    }
+}
+
+/* Keyframe animation to slide elements down */
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);  /* Start slightly above the element's position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);      /* Return to original position */
+    }
+}
+
+/* General card styles */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect */
+.book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.b-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Title styling */
+.b-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Paragraph styling */
+.b-paragraph {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Author styling */
+.b-author {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Price styling */
+.b-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Fading content */
+.book-item:hover .b-price {
+    opacity: 1;  /* Show the price */
+}
+
+.book-item:hover .b-img,
+.book-item:hover .b-title,
+.book-item:hover .b-paragraph,
+.book-item:hover .b-author {
+    opacity: 0.2;  /* Fade other content */
+    transition: opacity 0.3s ease;
+}
+
+/* Keyframe animation for highlighting */
+@keyframes highlight {
+    0% {
+        background-color: #e6f7ff;
+        border-color: #007bff;
+    }
+    100% {
+        background-color: white;
+        border-color: #007bff;
+    }
+}
+
+/* Contact Form Section */
+.contact-section {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label styles */
+.lbl {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea styles */
+.textplace {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Larger textarea */
+.message-box {
+    height: 150px;
+    resize: none;
+}
+
+/* Focus effect with animation */
+.textplace:focus {
+    animation: highlight 0.5s forwards;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button styles */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+    }
+}

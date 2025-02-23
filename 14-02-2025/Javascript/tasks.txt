@@ -1,0 +1,17 @@
+Write a Javascript for the following:
+1. create a variable with let, find its cube and display the result
+2. Create a variable with var, check if its positive or negative and display the result accordingly
+3. Create a variable as const, check if its a prime number or not, and display the result accordingly
+4. Create an alert to display the address of the user, and get the input from the user for the same
+5. Create a confirmation box , to check if the user will go the film today and display the result
+6. Create a prompt box , to get the age of the user and display the result
+7. Check for a number, if its divisible by 12 using if statement
+8. Get the price of 1 kg tomato from Monday to Sunday, find its average. If the average is greater than Rs.50, then display, tomato has given good profit. If not, display "No profit from tomato".
+9. Get the values of year and month. Check if the year is leap year. If yes, check if the month is February. If yes, display "The year is leap year and the month is February with 29 days.". If no, display "The year is leap year and the month is not February ". If the year is not leap, display "The given year is not a leap year".
+10. Get the Maths score of a student. If the mark is 100, display "Phenomenal!" . Else if the mark is greater than 85, display "Excellent!". Else, if the mark is between 71 to 85, display "Good work!". Else, if the mark is between 51 to 70, display "Practice well!". Else, display "Hard work is needed"
+11. Get the day of a week and perform the following using switch statement. If its Monday, display "Start of the week!" If its Tuesday, Wednesday or Thursday, display "Mid of the week!". If its Friday, display "Last working day of the week!". If its Saturday, display "WeekEnd - Saturday!". If its Sunday, display "WeekEnd - Sunday!".  If the input is not a day of the week, display "Invalid input!".
+12. Get 2 numbers. Display the multiplication table of the first number till second number. For example, if the numbers are 5 and 7, then the table should display from 5*1=5 to 5*7=35
+then
+13. Get 2 numbers. Have the third number as second number + 40. Using while loop, display the multiples of first number from second number to third number. For example , if the numbers are 7, 20, first number is 7, second number is 20 and third number is 20+40, which is 60. So, Multiples of 7 should be displayed from 20 to 60, using while loop
+14.Get 2 numbers with interval 30. For example 10,40. Display the values from 10 to 40, and stop displaying if any multiple of 7 comes.
+15.Get 2 numbers with interval 50. For example 10,60. Display the values from 10 to 60, but skip displaying the multiples of 5.

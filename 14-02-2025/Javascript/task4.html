@@ -1,0 +1,24 @@
+<!-- Create an alert to display the address of the user, and get the input from the user for the same -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+    <button onclick="alertCreation()">click</button>
+    <body>
+        <script>
+            function alertCreation(){
+                var a = prompt("Enter your Address")
+
+                if (a === null || a === ""){
+                    alert("This is empty")
+                }
+                else{
+                    alert("Hi so this is where you live: "+a)
+                }
+            }
+        </script>
+    </body>
+</html>

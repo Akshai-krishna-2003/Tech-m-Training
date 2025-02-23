@@ -1,0 +1,45 @@
+<!-- Create a variable with var, check if its positive or negative and display the result accordingly -->
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Task 2 in JavaScript</title>
+    </head>
+    <body>
+        <h2>This is task 2</h2>
+        
+        <button onclick="random()">Click me </button>
+        <p id="val"></p>
+        <script>
+            
+            
+
+            function random(){
+                var txt = "";
+                var box = prompt("Enter a number", "9");
+
+                if (box == null || box == "")
+                {
+                    txt = "This is empty!";
+                }
+
+                else{
+                    box = Number(box)
+                    if (box > 0){
+                        txt = box+" is positive";
+                    }
+                    else if (box < 0){
+                        txt = box+" is negative";
+                    }
+                    else{
+                        txt = "This is zero";
+                    }
+                }
+
+                document.getElementById("val").innerHTML= txt;
+            }
+            
+            
+        </script>
+    </body>
+</html>

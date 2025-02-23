@@ -1,0 +1,47 @@
+<!-- Get 2 numbers. Have the third number as second number + 40. Using while loop, display the multiples of first number from second number to third number. For example , if the numbers are 7, 20, first number is 7, second number is 20 and third number is 20+40, which is 60. So, Multiples of 7 should be displayed from 20 to 60, using while loop -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 13</title>
+    </head>
+    <body>
+        <h1>Multiples</h1>
+        <button onclick = "f1()">Click me!</button>
+        <p id = "a"> </p>
+        
+        <script>
+
+            function f1()
+            {
+                var p1 = prompt("Enter 1st number")
+                var p2 = prompt("Enter 2nd number")
+
+                if (p1 == "" || p1 == null || isNaN(p1) || p2 == "" || p2 == null || isNaN(p2)){
+                    alert("Some problem with inputs")
+                    return;
+                }
+                else{
+                    // Convert inputs to numbers
+                    p1 = parseFloat(p1);
+                    p2 = parseFloat(p2);
+                    var p3 = p2 + 40; // Third number
+                
+                    var output = "The multiples of " + p1 + " from " + p2 + " to " + p3 + " are: <br>";
+
+                    var i = p2
+                    
+                    while (i <= p3){
+                        if (i % p1 === 0){
+                            output += i + "<br>";
+                        }
+                        i++
+                    }
+                    document.getElementById("a").innerHTML = output;
+                }
+                
+            }
+
+        </script>
+    </body>
+</html>

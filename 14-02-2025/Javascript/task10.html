@@ -1,0 +1,36 @@
+<!-- Get the Maths score of a student. If the mark is 100, display "Phenomenal!" . Else if the mark is greater than 85, display "Excellent!". Else, if the mark is between 71 to 85, display "Good work!". Else, if the mark is between 51 to 70, display "Practice well!". Else, display "Hard work is needed"-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 10</title>
+    </head>
+
+    <body>
+        <h1>Student marks</h1>
+        <button onclick="studMarks()">Click me!</button>
+
+        <script>
+            function studMarks(){
+                var smarks = prompt("Enter student marks")
+
+                if (smarks == null || smarks == "" || isNaN(smarks)){
+                    alert("This is not a number!")
+                }
+                else{
+                    smarks = parseFloat(smarks)
+                    if (smarks > 100 || smarks < 0){
+                        alert("Invalid marks")
+                    }
+                    else{
+                        if (smarks == 100) alert("Phenomenal!")
+                        else if (smarks > 85 && smarks < 100) alert("Excellent!")
+                        else if (smarks > 70 && smarks <= 85) alert("Good work!")
+                        else if (smarks > 51 && smarks <= 70) alert("Practice well!")
+                        else  alert("Hard work is needed!")
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

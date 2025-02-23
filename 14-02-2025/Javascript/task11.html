@@ -1,0 +1,49 @@
+<!-- Get the day of a week and perform the following using switch statement. If its Monday, display "Start of the week!" If its Tuesday, Wednesday or Thursday, display "Mid of the week!". If its Friday, display "Last working day of the week!". If its Saturday, display "WeekEnd - Saturday!". If its Sunday, display "WeekEnd - Sunday!".  If the input is not a day of the week, display "Invalid input!". -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 11</title>
+</head>
+<body>
+    <h1>Day of the Week</h1>
+    <button onclick="f1()">Click me!</button>
+
+    <script>
+        function f1() {
+            var dp = prompt("Enter a day of the week:", "Sunday");
+
+            // Convert input to lowercase for case-insensitive matching
+            dp = dp.toLowerCase();
+
+            switch (dp) {
+                case "monday":
+                    alert("Start of the week!");
+                    break;
+
+                case "tuesday":
+                case "wednesday":
+                case "thursday":
+                    alert("Mid of the week!");
+                    break;
+
+                case "friday":
+                    alert("Last working day of the week!");
+                    break;
+
+                case "saturday":
+                    alert("WeekEnd - Saturday!");
+                    break;
+
+                case "sunday":
+                    alert("WeekEnd - Sunday!");
+                    break;
+
+                default:
+                    alert("Invalid Input!");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

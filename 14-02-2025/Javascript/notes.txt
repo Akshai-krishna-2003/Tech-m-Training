@@ -1,0 +1,18 @@
+JavaScript Virtual  Machine (Execution Engine)
+
+LiveScript
+JavaScript
+ECMAScript
+
+Variables
+DataTypes
+Control stmts
+Functions 
+Popup box -- alert, confirm, prompt
+
+Variables in js: var, let, const
+const: Constant val
+
+var is to declare variables' global scope  
+let is used to declare variables in local scope
+

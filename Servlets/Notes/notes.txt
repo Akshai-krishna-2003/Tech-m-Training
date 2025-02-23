@@ -1,0 +1,33 @@
+Servlet -> It is a java file that can take request 
+Process it and create a html page and give back to the client 
+
+Request are given to web container (helper application) (Eg. tomcat)
+
+client (req abc.html) -> helper application (has a file named deployment descriptor (web.xml))  -> servlet
+
+deployment descriptor -> is a mapper that says for which request which servlet has to be called 
+(file name is web.xml)
+
+2 tags 
+servlet tag -> class name
+servlet mapping tag -> url patterns 
+
+servlet -> class extends HttpServlet
+
+servlet makes response (in form of html, string, xml or whatever)
+
+response go from server to client machine in form of response object  
+
+We can use annotations -> to avoid xml files 
+
+Workspace -> Folder where u put  all your project
+
+
+Configuring tomcat server on eclipse?
+
+1. Go to server tabs down there
+2. Select apache and select the location where tomcat is installed
+3. Right click on tomcat and say start
+4. You can check properties of tomcat by clicking it 
+
+Continue from 22:28 Creating Web Project in Eclipse

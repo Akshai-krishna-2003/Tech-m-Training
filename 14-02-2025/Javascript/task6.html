@@ -1,0 +1,31 @@
+<!-- Create a prompt box , to get the age of the user and display the result -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 6</title>
+    </head>
+    <body>
+        <h2>AGE</h2>
+        <p id="a"></p>
+        <button onclick="pBox()">This is the button</button>
+        <script>
+            var txt
+            function pBox(){
+                var x = prompt("Tell me your age")
+
+                
+                x = Number(x)
+
+                if (x > 18){
+                    txt = "Yay you are eligible to vote!"
+                }
+                else{
+                    txt = "Nah! you are still a kid!"
+                }
+
+                document.getElementById.innerHTML = txt
+            }
+        </script>
+    </body>
+</html>
