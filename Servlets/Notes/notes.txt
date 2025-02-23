@@ -31,3 +31,5 @@ Configuring tomcat server on eclipse?
 4. You can check properties of tomcat by clicking it 
 
 Continue from 22:28 Creating Web Project in Eclipse
+
+We will start tomorrow for now 
