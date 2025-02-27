@@ -1,0 +1,37 @@
+Previous revision from 21-02-2025 
+
+Components
+JSK (JAVASCRIPT + XML)
+States, props
+
+Normal is imperative programming 
+1. more number of lines 
+2. will say how to 
+
+
+React dom is declarative programming
+1. less number of lines 
+2. It will say what
+
+
+Why node and why npm?
+npm - node package manager - get the third party libraries
+node - run time environment for js files
+
+react projects
+Google search 
+CDN - content delivery network (group of distributed services)
+babel cdn 
+
+Component
+bit of code 
+Independent and reusable
+
+Props
+Parameter to create components
+
+Life stages of reactJS
+Initialization 
+Mounting --> A component is created and added to DOM
+Updating --> Receives updates and re renders
+Unmounting --> 

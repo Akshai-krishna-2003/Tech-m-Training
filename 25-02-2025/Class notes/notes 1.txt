@@ -1,0 +1,85 @@
+Banu Manoharan
+09:06
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = () => {
+    alert("Great Shot!");
+  }
+
+  return (
+    <button onClick={shoot}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+
+______________________________________________________________________________
+If conditionals!
+~~~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function EvenNumber() {
+	return <h1>EvenNumber!</h1>;
+}
+function OddNumber() {
+	return <h1>OddNumber!</h1>;
+}
+
+function CheckNumber(props) {
+  const isNum = props.num;
+  if (isNum%2==0) {
+    return <EvenNumber/>;
+  }
+  return <OddNumber/>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root1'));
+root.render(<CheckNumber num="903" />);
+Banu Manoharan
+10:56
+__________________________________________________________
+Logical && conditionals
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function FriendsForMe(props) {
+  const friends = props.friends;
+  return (
+    <>
+      <h1>About Friends!!</h1>
+      { friends.length > 0 &&
+        <h2>
+          You have {friends.length} friends for you!!!
+        </h2>
+      }
+         <h3>You have no friends for you!!!</h3>
+    </>
+  );
+}
+const friends = ['ABCD', 'MDA', 'SP', 'ABR'];
+const friendss = [];
+const root = ReactDOM.createRoot(document.getElementById('root1'));
+root.render(<FriendsForMe friends={friendss} />);
+Banu Manoharan
+10:58
+_____________________________________________________
+
+Ternary Operator
+~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function EvenNumber() {
+	return <h1>EvenNumber!</h1>;
+}
+
+function OddNumber() {
+	return <h1>OddNumber!</h1>;
+}

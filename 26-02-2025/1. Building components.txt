@@ -1,0 +1,39 @@
+Learning will be: 
+1. Building components
+2. Rendering Markup with JSX
+3. Managing state
+4. Passing inputs via props
+5. Debugging react apps
+
+
+Creating a list group component
+
+Before that, lets install Bootstrap 
+It is a popular CSS library that gives us a bunch of CSS classes for styling our application
+
+command to install npm i bootstrap@5.2.3 
+
+contents of App.css is removed 
+And contents index.css is removed completely
+
+import this in main.tsx
+'bootstrap/dist/css/bootstrap.css'
+
+Lets create a list group component
+
+in src folder add a folder named components 
+
+This is not necessary but by convention we put all the components in a folder named components
+
+Get list group from boot strap website from docs  section
+
+This is the code: 
+<ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+
+Change the class to className as it is used in js 

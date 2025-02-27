@@ -1,0 +1,28 @@
+Create a new component 
+Right click on src 
+Component name.tsx
+
+To tsx usually used for react based components 
+
+Function based components is used in this course 
+
+PascalCasing --> First letter should be Capitalized for a component
+
+This syntax is called JSX - JavaScript XML 
+
+<h1> hello world </h1> 
+
+Will be converted by babel to: 
+
+import { jsx as _jsx } from "react/jsx-runtime";
+/*#__PURE__*/_jsx("h1", {
+  children: " hello world "
+});import { jsx as _jsx } from "react/jsx-runtime";
+/*#__PURE__*/_jsx("h1", {
+  children: " hello world "
+});
+
+// To use this component we export it as
+export default Message;
+
+With jsx we can easily create dynamic content 

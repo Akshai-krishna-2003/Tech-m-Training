@@ -1,0 +1,121 @@
+
+Function Component
+~~~~~~~~~~~~~~~~~~
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Mobile() {
+  return <h2>Mobile Component!</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Mobile />);
+________________________________________________________________
+Function Component with props
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Mobile(props) {
+  return <h2>{props.model} Mobile Component !!</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Mobile  model="ABCD"/>);
+__________________________________________________________
+Class Component
+~~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+class Mobile extends React.Component {
+  render() {
+    return <h2> Mobile Component !!</h2>;
+  }
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Mobile  />);
+Banu Manoharan
+13:02
+_____________________________________________________________
+Class Component with props
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+class Mobile extends React.Component {
+  render() {
+    return <h2>{this.props.model} Mobile Component !!</h2>;
+  }
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Mobile  model="ABCD"/>);
+______________________________________________
+
+Components within Components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Mobile() {
+  return <h2>Mobile Component!</h2>;
+}
+
+function ShowRoom() {
+  return (
+    <>
+	    <h1>In Poorvika!!!</h1>
+	    <Mobile />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<ShowRoom />);
+Banu Manoharan
+13:04
+Composition of Components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Mobile1() {
+  return <h2>Mobile Component1!</h2>;
+}
+
+function Mobile2() {
+  return <h2>Mobile Component2!</h2>;
+}
+
+function Mobile3() {
+  return <h2>Mobile Component3!</h2>;
+}
+function ShowRoom() {
+  return (
+    <div>
+	    <Mobile1 />
+         <Mobile2 />
+         <Mobile3 />   
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+1. Create 3 div elements in a html file. Render h2 in a div, h4 tag in a div and p in a div using ReactDom
+
+2. Create a component called Flower using functions with props as name with value "Rose"
+
+3. Create a component called course using class with props as name with value "Information Technology"
+
+4. Create a Animal component using function
+
+5. Create a component called Game using class
+
+6. Create a component called Training . Create the components for Java, Javascript, React and Angular and have them inside the Training component. Display their details in a html page with heading as "Topics for Traning".

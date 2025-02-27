@@ -1,0 +1,55 @@
+React js - Building dynamic and interactive user interfaces
+
+Why react?
+it helps to manage the dom structure of a page 
+
+Create react app:
+
+Two ways - 
+1. Create React App (Given by official react team)
+2. Vite (Lets use this coz faster and smaller bundle)
+
+Creating a react project 
+
+Command: 
+npm create vite@4.1.0
+
+Then do all the requirements asked 
+Then select react
+select typescript
+
+then cd into the folder 
+Then type command 
+
+command: npm i (To install third party dependencies)
+
+open the project in vscode 
+Either through GUI 
+Commmand is: code .
+
+Then open terminal that is embeddded in vs code
+
+To run web server type: npm run dev
+
+A local host link will be provided 
+
+Key components of files and folders in the project: 
+
+1. node_modules --> All the important modules and all resides here (Donot disturb this folder)
+2. public --> Contains all public assets like images and video files etc  
+3. See the srcc folder 
+It has a component called App.tsx
+(Dont worry for now we re write everything from scratch)
+
+Go to index.html you can see this 
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+
+This is the entry point of your react application 
+
+package.json -> Information about the project
+
+tsconfig.json -> tells app how to convert ts to js 
+
+vite.config.ts -> Dont need to touch it though it is vite configuration
+

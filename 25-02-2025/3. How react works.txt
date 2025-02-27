@@ -1,0 +1,1 @@
+React Dom updates the virtual dom in react 

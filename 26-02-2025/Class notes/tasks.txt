@@ -1,0 +1,5 @@
+1. Get a number and display if its divisible by 16 using if else block
+
+2. The user can have the aadhar card or PAN card to get a government offer. Check the details of the user, and display what cards are available with the user, using logical ||
+
+3. Create a list of students with their department details, and display them
