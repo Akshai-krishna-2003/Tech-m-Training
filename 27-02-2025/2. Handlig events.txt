@@ -1,0 +1,15 @@
+ClassName = "Give a class name in the jsx file"
+onClick = {() => {console.log("Use a message!")}}
+
+(event) => {
+                console.log(event); // SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: li.list-group-item, …}
+
+                alert("clicked " + item + " index = " + index);
+
+
+// MouseEvent is how we put in events 
+ const handleClick = (event: MouseEvent) => {
+    console.log(event); // SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: li.list-group-item, …}
+  };
+
+onClick={handleClick}
