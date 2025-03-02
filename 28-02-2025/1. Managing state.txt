@@ -1,0 +1,63 @@
+When we click on an item we want to highlight it 
+
+so we have a class in css bootstrap called active 
+// active is a class to activate highlight className="list-group-item active" this will activate all the items and its not what we want to have
+
+
+import { useState } from "react";
+
+function GetList() {
+  let items = ["New York", "Chennai", "Mumbai", "Delhi"];
+
+  // Click not working so why it happens
+  // Because selectedIndex is local to
+  //   let selectedIndex = 0;
+  // onClick={() => (selectedIndex = index)} IN li
+  // React is not aware of this variable
+  // To tell react we have have a DATA or STATE that might CHANGE OVER TIME
+  // To use this we are goinng to use a function called useState
+
+  // This function is called a Hook
+  // Hook is a function that allows us to tap into built in features in react
+  // This is called a STATE HOOK -- There are many hooks too
+  const [selectedIndex, setSelectedIndex] = useState(-1); // this returns an array of two values And
+  // arr[0] ==> selected variable like selectedIndex which is current state
+  // arr[1] ==> function that updates the present state
+  // selectedIndex be a state and setSelectedIndex be a function and we can use this convention in js (Destructuring array in js)
+  //   onClick={() => {
+  //     setSelectedIndex(index);
+  //   }}
+
+  return (
+    <>
+      <h1>List</h1>
+
+      <ul className="list-group">
+        {/*Index of the item can be used using index */}
+        {items.map((item, index) => (
+          <li
+            // active is a class to activate highlight className="list-group-item active" this will activate all the items and its not what we want to render
+            className={
+              selectedIndex === index //  we need to update the index too now
+                ? "list-group-item active"
+                : "list-group-item"
+            }
+            key={item}
+            onClick={() => {
+              setSelectedIndex(index);
+            }}
+          >
+            {" "}
+            {/* class name added to make each item clickable*/}
+            The city is {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default GetList;
+
+
+NOTE: Each component will have its own state

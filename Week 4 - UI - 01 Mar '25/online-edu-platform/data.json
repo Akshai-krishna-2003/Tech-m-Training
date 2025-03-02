@@ -1,0 +1,36 @@
+{
+    "courses": [
+        { "title": "Web Development", "description": "Master HTML, CSS, JavaScript, and React.", "image": "assets/webdev.jpg" },
+        { "title": "Data Science", "description": "Learn Python, Machine Learning, and AI.", "image": "assets/datascience.jpg" },
+        { "title": "Graphic Design", "description": "Master Photoshop, Illustrator, and Figma.", "image": "assets/design.jpg" },
+        { "title": "Cybersecurity", "description": "Learn ethical hacking and network security.", "image": "assets/cybersecurity.jpg" },
+        { "title": "Mobile App Development", "description": "Build iOS and Android apps using Flutter.", "image": "assets/mobiledev.png" }
+    ],
+    "instructors": [
+        {
+            "name": "Lionel Messi",
+            "bio": "Senior Web Developer with 10 years of experience. Passionate about teaching and creating interactive web applications.",
+            "image": "assets/messi.jpg"
+        },
+        {
+            "name": "Neymar JR",
+            "bio": "Data Scientist specializing in AI and deep learning. Worked on major machine learning projects worldwide.",
+            "image": "assets/neymar.jpg"
+        },
+        {
+            "name": "Jude Bellingham",
+            "bio": "Graphic Designer and UX expert with a decade of experience in creating stunning visuals.",
+            "image": "assets/jude.jpg"
+        },
+        {
+            "name": "Ronaldo Nazario",
+            "bio": "Cybersecurity analyst and ethical hacker. Helps businesses secure their digital platforms.",
+            "image": "assets/ronaldo.jpg"
+        },
+        {
+            "name": "José Mourinho",
+            "bio": "Mobile app developer and Flutter expert. Loves teaching students how to build beautiful mobile apps.",
+            "image": "assets/jose.jpg"
+        }
+    ]
+}

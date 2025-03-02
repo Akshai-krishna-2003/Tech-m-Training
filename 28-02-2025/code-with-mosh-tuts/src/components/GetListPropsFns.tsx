@@ -1,0 +1,40 @@
+import { useState } from "react";
+
+interface Props {
+  items: string[];
+  heading: string;
+  onSelectedItem: (items: string) => void; // We have declared a function onSelectedItem: which is a function: returns void
+}
+
+function GetList({ items, heading, onSelectedItem }: Props) {
+  // onSelectItem to be added here in deselect
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+
+  return (
+    <>
+      <h1>{heading}</h1>
+
+      <ul className="list-group">
+        {items.map((item, index) => (
+          <li
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
+            key={item}
+            onClick={() => {
+              setSelectedIndex(index);
+              onSelectedItem(item); // Call the function
+              // alert(item + " is selected");
+            }}
+          >
+            The city is {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default GetList;

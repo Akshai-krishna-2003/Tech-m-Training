@@ -1,0 +1,13 @@
+State vs Props
+
+Props
+~~~~~
+1. Inputs passed to a component
+2. Similar to function arguments
+
+
+
+State
+~~~~~~
+1. Internal data managed by a component
+2. Similar to local variables inside a function
