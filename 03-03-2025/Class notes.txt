@@ -1,0 +1,277 @@
+To work with Angular JS, we need a Node environment. 
+
+Angular and AngularJS are different. 
+
+The technology we are learning is Angular, not AngularJS. 
+
+Angular is new and AngularJS is old. 
+
+Webpages rendered/displayed on a browser (HTML, CSS, JS ), basically used
+
+control the
+layout - html
+look and feel - CSS
+logic and DOM manipulation 
+
+DOM (browser window -> document -> elements -> attributes)
+
+There is a modern idea called a SINGLE PAGE APPLICATION - SPA 
+	A single web page doing a lot, and lots of functionalities 
+	Handling lots of UI elements, behaviour
+	With plain HTML, CSS, and JS, it's tough to handle so many elements 
+	Because it is complex to develop, formulate, and maintain an application
+	So one such single page web application is Angular 
+	It is even used for mobile and desktop application (When coupled with 	specialized libraries)
+
+
+To develop Angular, we use TypeScript.
+
+For JRE for Java llrly to run JavaScript we use Node.js. 
+
+SPA is front-end
+
+The Internet is very costly and slow too
+HTML, CSS, and JS --> internet-based 
+
+HTML transferred the server to the client 
+
+
+function show(a,b,c){
+   console.log(a+" "+b+" "+c);
+}
+ 
+show(12)                   // 12 undefined undefined
+show("Arun","Kumar")      // Arun Kumar undefined
+show(12,4,53)             // 12 4 53
+show("Jay","John",78)     // Jay John 78
+show(1,2,3,4)             // 1,2,3
+
+Js is not a strictly tyed language 
+It is a very flexible language 
+
+a=[34,35,35,6,34,5433,534,34,53]
+ 
+console.log(a[3])  // 6
+console.log(a[99])  // undefined
+a[99]=90  
+console.log(a[99])  // 99
+
+person = {sno: 1, name: "Ganesh"}
+
+person.skills = ["Java", "Javascript"] // Accepted 
+ 
+console.log(person.skills) 
+
+
+// type script strict typing 
+
+function show1(a: number, b: number, c:number ) : void
+{
+    console.log(a,b,c);
+}
+
+show1(1,2,3)
+
+if (typescript){
+	strict type checking 
+	development    ----- > typescript
+	
+	( compile + test + package )
+	
+	production     ------ > javascript
+}
+
+compiler has to run
+packaging tool has to run
+testing tool has to run
+development server needs to run
+
+for all above utilities/tools need a javascript platform to run 
+
+for all the above activities 
+
+
+
+For a node js based project
+
+We might need 
+
+1. Libraries
+download locally into project 
+
+production dependencies 
+ 	npm install <libraries> 
+	It is used in both development and production phase like angular, 	bootstrap
+
+development dependencies
+	only for development wwe need like ts, jasmine etc
+	npm install --save-dev <library>
+
+
+
+2. Utilities/tools (test runner, packaging tool, build tools, compiler)
+This to be downloaded globally
+npm install -g [tools]
+
+
+
+package-lock.json: Will tell the chain of dependency on the system
+
+
+Note: ignore node module folder when you upload something 
+
+dependencies 
+{
+	"bootstrap" : "^4.1.1"
+}
+
+4.1.1 --> ~(4.1.1 ... 4.1.2 is ok) (latest patch version)
+4.1.1 --> ^(4.0., 4.1) (latest minor version)
+
+
+Version = major.minor.patch
+
+January 2022: 1.2.1
+
+major - 1
+minor - 2
+patch - 1
+
+
+To install Angular CLI 
+npm -install -g @angular/cli@17
+
+
+To make an angular project:
+1. Open a folder where you want to create a project
+2. ng new firstapp --no-standalone   //run this 
+3. Press css
+4. Say yes
+5. Then cd firstapp
+6. code . (to open in vscode)
+
+A web page can be assumed or presumed as a collection of individual units instead of one single HTML block.
+This individual unit is called components --> Like a search bar.
+
+A component is a UI unit that has 
+	1. Its own template (html)
+	2. Styling (CSS)
+	3. It should have its own events 
+
+	Components (TS)
+
+	@Component(
+
+
+	)
+
+
+	class BoxComponent {
+	name:strinng = "mybox"
+
+	
+	
+	}
+	
+Angular SPA is a web page which is treated as a collection of n components.
+
+To support angular we have other features like: 
+	1. Services 
+	2. Pipes
+	3. Directives
+
+Additional features like routes, guards, etc... 
+
+Typically, an Angular application is called a module
+
+	An Angular will have a primary module, which may be linked with multiple other modules.
+
+
+
+Angular cli?
+	1. Generate application
+	2. Generate code
+	3. Test your application
+	4. Build your application 
+	5. Packaging your application 
+	6. Run your applications 
+
+
+tsconfig.json -> Typescript config
+tsconfig.app.json -> app config 
+package.json -> All dependencies and app related ones 
+
+start from main.ts --> app.module.ts is started
+
+
+We have decorators in ts 
+Like annotations in java 
+
+Bootstrap components
+	1. There can be n components in angular application but all those components cannot 	be called in index.html
+
+
+ng serve --> to run component locally 
+
+@NgModule({
+  declarations: [
+    AppComponent //components, directives, and pipes
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule //other modules needed by the app module
+  ],
+  providers: [
+    provideClientHydration() //services defined in the app module
+  ],
+  bootstrap: [AppComponent]
+})
+
+
+Create a new component 
+command: ng g c info-item
+
+Then a folder named info-item would be created under src 
+
+app-root --> (app-info-item, app-info-item, app-info-item, app-info-item, app-info-item)
+
+
+Angular Directives
+A Directive is a custom element or attribute created by using angular
+
+There are three types of angular directives
+
+Component Directive
+Structural Directive
+Attribute Directive
+
+Component Directive
+The custom elements that you create is called component directive
+
+Every component is actually called component directive
+
+Structural Directive
+Structural directives are custom attributes that could
+be applied either for html elements or angular components
+
+Structural directives when applied , it either generates
+code,hides/unhides template
+
+<li *ngFor="let x of ['apple','boy','çat']">{{x}}</li>
+
+it would produce three list items
+
+<div *ngIf="show"></div>
+
+the above division will be shown if show is true will be hidden
+if show is false
+
+Note: structural directives are prefixed with *
+
+json-server --port 4500 api.json
+
+
+To create a custom pipe ng g p folder/files/etc
+
+
+

@@ -1,0 +1,11 @@
+<div class="parent-container">
+    <h1>Parent Container</h1>
+
+    <!-- Buttons to select an item -->
+    <button (click)="selectItem('Smart Phone')">Smart Phone</button>
+    <button (click)="selectItem('Laptop')">Laptop</button>
+    <button (click)="selectItem('Pendrive')">Pendrive</button>
+
+    <!-- ✅ Use correct selector: app-child-component -->
+    <app-child-component [item]="selectedItem"></app-child-component>
+</div>

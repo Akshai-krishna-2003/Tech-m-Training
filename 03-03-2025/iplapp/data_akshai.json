@@ -1,0 +1,215 @@
+{
+  "teams": [
+    {
+      "id": "1",
+      "name": "Mumbai Indians",
+      "owner": "Mukesh Ambani",
+      "captain": "Rohit Sharma",
+      "trophies": 5,
+      "homeGround": "Wankhede Stadium",
+      "logo": "http://localhost:8090/ipl/mumbai_indians.png"
+    },
+    {
+      "id": "2",
+      "name": "Chennai Super Kings",
+      "owner": "N Srinivasan",
+      "captain": "MS Dhoni",
+      "trophies": 5,
+      "homeGround": "M. A. Chidambaram Stadium",
+      "logo": "http://localhost:8090/ipl/csk.png"
+    },
+    {
+      "id": "3",
+      "name": "Royal Challengers Bangalore",
+      "owner": "United Spirits",
+      "captain": "Faf du Plessis",
+      "trophies": 0,
+      "homeGround": "M. Chinnaswamy Stadium",
+      "logo": "http://localhost:8090/ipl/rcb.png"
+    },
+    {
+      "id": "4",
+      "name": "Punjab Kings",
+      "owner": "Preity Zinta",
+      "captain": "Shikhar Dhawan",
+      "trophies": 0,
+      "homeGround": "IS Bindra Stadium",
+      "logo": "http://localhost:8090/ipl/punjab_kings.png"
+    },
+    {
+      "id": "5",
+      "name": "Rajasthan Royals",
+      "owner": "Manoj Badale",
+      "captain": "Sanju Samson",
+      "trophies": 1,
+      "homeGround": "Sawai Mansingh Stadium",
+      "logo": "http://localhost:8090/ipl/rajasthan_royals.png"
+    },
+    {
+      "id": "6",
+      "name": "Kolkata Knight Riders",
+      "owner": "Shah Rukh Khan",
+      "captain": "Shreyas Iyer",
+      "trophies": 2,
+      "homeGround": "Eden Gardens",
+      "logo": "http://localhost:8090/ipl/kkr.png"
+    },
+    {
+      "id": "7",
+      "name": "Sunrisers Hyderabad",
+      "owner": "Kalanithi Maran",
+      "captain": "Pat Cummins",
+      "trophies": 1,
+      "homeGround": "Rajiv Gandhi International Stadium",
+      "logo": "http://localhost:8090/ipl/srh.png"
+    },
+    {
+      "id": "8",
+      "name": "Delhi Capitals",
+      "owner": "GMR Group",
+      "captain": "Rishabh Pant",
+      "trophies": 0,
+      "homeGround": "Arun Jaitley Stadium",
+      "logo": "http://localhost:8090/ipl/dc.png"
+    },
+    {
+      "id": "9",
+      "name": "Lucknow Super Giants",
+      "owner": "Sanjiv Goenka",
+      "captain": "KL Rahul",
+      "trophies": 0,
+      "homeGround": "BRSABV Ekana Cricket Stadium",
+      "logo": "http://localhost:8090/ipl/lsg.png"
+    },
+    {
+      "id": "10",
+      "name": "Gujarat Titans",
+      "owner": "CVC Capital Partners",
+      "captain": "Shubman Gill",
+      "trophies": 1,
+      "homeGround": "Narendra Modi Stadium",
+      "logo": "http://localhost:8090/ipl/gt.png"
+    },
+    {
+      "id": "817a",
+      "name": "Australia",
+      "owner": "Adolf Hitler",
+      "captain": "Queen Elizabeth",
+      "homeGround": "Perth",
+      "trophies": 6,
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdsthfrjY3YzxNRJY0ckaItCM6mt2L0bTDA&s"
+    }
+  ],
+  "players": [
+    {
+      "id": "1",
+      "name": "Rohit Sharma",
+      "team": "Mumbai Indians",
+      "role": "Batsman",
+      "matches": 200,
+      "runs": 5600,
+      "wickets": 15,
+      "image": "http://localhost:8090/ipl/rohit_sharma.png"
+    },
+    {
+      "id": "2",
+      "name": "MS Dhoni",
+      "team": "Chennai Super Kings",
+      "role": "Wicketkeeper",
+      "matches": 220,
+      "runs": 5000,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/ms_dhoni.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Virat Kohli",
+      "team": "Royal Challengers Bangalore",
+      "role": "Batsman",
+      "matches": 230,
+      "runs": 6700,
+      "wickets": 5,
+      "image": "http://localhost:8090/ipl/virat_kohli.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Shikhar Dhawan",
+      "team": "Punjab Kings",
+      "role": "Batsman",
+      "matches": 190,
+      "runs": 6000,
+      "wickets": 2,
+      "image": "http://localhost:8090/ipl/shikhar_dhawan.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Sanju Samson",
+      "team": "Rajasthan Royals",
+      "role": "Wicketkeeper",
+      "matches": 150,
+      "runs": 4000,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/sanju_samson.png"
+    },
+    {
+      "id": "6",
+      "name": "Shreyas Iyer",
+      "team": "Kolkata Knight Riders",
+      "role": "Batsman",
+      "matches": 120,
+      "runs": 3500,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/shreyas_iyer.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Pat Cummins",
+      "team": "Sunrisers Hyderabad",
+      "role": "Bowler",
+      "matches": 90,
+      "runs": 1000,
+      "wickets": 120,
+      "image": "http://localhost:8090/ipl/pat_cummins.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Rishabh Pant",
+      "team": "Delhi Capitals",
+      "role": "Wicketkeeper",
+      "matches": 120,
+      "runs": 4000,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/rishabh_pant.jpg"
+    },
+    {
+      "id": "9",
+      "name": "KL Rahul",
+      "team": "Lucknow Super Giants",
+      "role": "Batsman",
+      "matches": 150,
+      "runs": 4800,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/kl_rahul.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Shubman Gill",
+      "team": "Gujarat Titans",
+      "role": "Batsman",
+      "matches": 80,
+      "runs": 2200,
+      "wickets": 0,
+      "image": "http://localhost:8090/ipl/shubman_gill.jpg"
+    },
+    {
+      "id": "58c4",
+      "name": "Adolf Hitler",
+      "team": "Nazi",
+      "role": "Wicketkeeper",
+      "matches": 7000,
+      "runs": 10000,
+      "wickets": 0,
+      "image": "https://assets.editorial.aetnd.com/uploads/2009/10/adolf-hitler-gettyimages-119505258.jpg?width=3840&height=1920&crop=3840%3A1920%2Csmart&quality=75&auto=webp"
+    }
+  ]
+}

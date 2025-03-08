@@ -4,6 +4,7 @@ Props
 ~~~~~
 1. Inputs passed to a component
 2. Similar to function arguments
+3. Tbh this is to be trated 
 
 
 

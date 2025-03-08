@@ -1,0 +1,33 @@
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="http://localhost:8090/{{ project.image }}"
+        class="img-fluid rounded-start"
+        alt="{{ project.name }}"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.name }}</h5>
+        <h4>{{ project.category }}</h4>
+        <p class="card-text">{{ project.description }}</p>
+        <p class="card-text">Status: {{ project.status }}</p>
+        <p class="card-text">
+          Project start:
+          {{ project.startDate | date : "MM, MMMM yyyy" }}
+        </p>
+        <p>Project end: {{ project.endDate | date : "MM, MMMM yyyy" }}</p>
+        <p>
+          <strong>{{ project.client }}</strong>
+        </p>
+        <strong>Technologies Used:</strong>
+        <ul>
+          <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+        </ul>
+        <p>Client: {{ project.client }}</p>
+        <p>Team Size: {{ project.teamSize}}</p>
+      </div>
+    </div>
+  </div>
+</div>
