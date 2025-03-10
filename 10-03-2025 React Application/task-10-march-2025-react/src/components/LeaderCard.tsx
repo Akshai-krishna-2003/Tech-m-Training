@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Leader } from "./types";
 
 const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
   const role = leader.status === "Alive" ? "Peace Destroyer" : "Rest in Peace";
+
+  // Different songs for alive & deceased
+  const aliveSong = "/alive.mp3";
+  const deceasedSong = "/deceased.mp3";
+
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handleCardClick = () => {
+    // Stop previous audio if playing
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    // Play new audio
+    audioRef.current = new Audio(
+      leader.status === "Alive" ? aliveSong : deceasedSong
+    );
+    audioRef.current.play();
+  };
 
   return (
     <div
       className="leader-card"
       style={{
         position: "relative",
-        width: "600px", // Wide rectangular layout
+        width: "600px",
         height: "400px",
         background: `linear-gradient(180deg, #8B0000, #000)`,
         color: "white",
@@ -21,9 +41,10 @@ const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
         padding: "20px",
         display: "flex",
         alignItems: "center",
+        cursor: "pointer",
       }}
+      onClick={handleCardClick} // Play different song based on status
     >
-      {/* Large Background Name */}
       <div
         style={{
           position: "absolute",
@@ -42,10 +63,10 @@ const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
         Agent {leader.name}
       </div>
 
-      {/* Leader Image - Full Visibility */}
+      {/* Leader Image */}
       <div
         style={{
-          width: "50%", // Adjusted width for proper scaling
+          width: "50%",
           height: "90%",
           display: "flex",
           alignItems: "center",
@@ -58,12 +79,12 @@ const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
           src={leader.image}
           alt={leader.name}
           style={{
-            width: "100%", // Ensures full image width is utilized
+            width: "100%",
             height: "100%",
-            objectFit: "contain", // Ensures the entire image is visible
+            objectFit: "contain",
             borderRadius: "10px",
             filter: "contrast(1.2) brightness(1.1)",
-            boxShadow: "0px 5px 15px rgba(255, 165, 0, 0.5)", // Soft glow effect
+            boxShadow: "0px 5px 15px rgba(255, 165, 0, 0.5)",
             zIndex: 2,
           }}
         />
@@ -106,14 +127,14 @@ const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
         </p>
       </div>
 
-      {/* Achievements - Bigger, White & Visible */}
+      {/* Achievements */}
       <div
         style={{
           position: "absolute",
           bottom: "10px",
           left: "10px",
           right: "10px",
-          backgroundColor: "rgba(255, 255, 255, 0.2)", // Light contrast
+          backgroundColor: "rgba(255, 255, 255, 0.2)",
           padding: "15px",
           borderRadius: "8px",
           textAlign: "center",
@@ -123,9 +144,9 @@ const LeaderCard: React.FC<{ leader: Leader }> = ({ leader }) => {
         <p
           style={{
             fontSize: "16px",
-            color: "#ffffff", // Bright white text
+            color: "#ffffff",
             fontWeight: "bold",
-            textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Glow effect
+            textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
           }}
         >
           <strong>Achievements:</strong> {leader.notableAchievements}
