@@ -1,0 +1,54 @@
+{
+  "leaders": [
+    {
+      "id": "1",
+      "name": "Adolf Hitler",
+      "country": "Germany",
+      "flag": "http://localhost:8090/leaders/germany.jpg",
+      "image": "http://localhost:8090/leaders/hitler.jpg",
+      "status": "Deceased",
+      "yearsInPower": "1933 - 1945",
+      "notableAchievements": "Took over half of Europe … but coulnt take a joke."
+    },
+    {
+      "id": "2",
+      "name": "Donald Trump",
+      "country": "USA",
+      "flag": "http://localhost:8090/leaders/usa.png",
+      "image": "http://localhost:8090/leaders/trump.jpg",
+      "status": "Alive",
+      "yearsInPower": "2017 - 2021, 2025 - Present",
+      "notableAchievements": "Tried to make America great again … ended up making Twitter great instead."
+    },
+    {
+      "id": "3",
+      "name": "Narendra Modi",
+      "country": "India",
+      "flag": "http://localhost:8090/leaders/india.jpg",
+      "image": "http://localhost:8090/leaders/modi.jpg",
+      "status": "Alive",
+      "yearsInPower": "2014 - Present",
+      "notableAchievements": "Built the biggest democracy … but only takes questions from Meloni."
+    },
+    {
+      "id": 1741603430072,
+      "name": "Joseph Stalin",
+      "country": "Soviet Union",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIeIrMi_6yghYU-IUMwJIciCdcS4FU_ClLQ&s",
+      "status": "Deceased",
+      "yearsInPower": "1922 - 1952",
+      "notableAchievements": "Turned one country into the Soviet Union. Turned 20 million people into missing persons."
+    },
+    {
+      "id": 1741605616726,
+      "name": "Kim Jong Um",
+      "country": "North Korea",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/1200px-Flag_of_North_Korea.svg.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkE9wMcBsC-pw3aFQ1V4GYFeHjbezws1PTNg&s",
+      "status": "Alive",
+      "yearsInPower": "1980 - Present",
+      "notableAchievements": "North Koreas greatest magician — \nmakes people, food, and internet disappear."
+    }
+  ]
+}
