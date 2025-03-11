@@ -1,0 +1,55 @@
+1. Smart phones: Android and IOS 
+Android --> SDK --> Kotlin/Java ---> (Native android application)
+IOS --> SDK --> Objective C/ Swift --> (Native android application)
+
+
+Advantages:
+	Works faster and efficient 
+	UI/loyout would be platform specific 
+	Native features can be developed easily
+
+Disadvantages:
+	For each platform a specific applicaton need to be developed
+	Time and resource consuming
+
+___________________________________________________________________________
+
+
+Hybrid / Cross platform mobile application development 
+
+Idea is: 
+	We will develop UI/Layout using a common language 
+	(in most availavle fw we use html/css/js/ts) some langauges also bring in their own 	application 
+	
+	We can still native features according to the platforms by converting the valls in 	the source code to native calls
+
+
+	One codde --> multiple platforms
+	
+	Ionic:
+	React Native
+
+	Flutter - Cross platform Application 
+		1. cross platfor mobile app
+		2. web app 
+		3. Desktop application
+
+	Flutter uses a language called dart for development 
+
+	What we going to do?
+
+	Using flutter how to develop cross platforms mobile applications / android 	applications
+
+	For making / testing application for android 
+	we need andoid device 
+	
+	Adroid device 
+		Emulator(AVD)
+
+	Emulator ? SDK and emulator tools
+
+
+Note: We are not going to develop anything using android studio 
+
+Google doesn't allow downloading SDK without studio
+

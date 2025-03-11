@@ -1,0 +1,16 @@
+1. Set up Android studio
+    -- Simply download and 
+2. Update your virtual device
+3. Virtual Device manage 
+
+
+4. Download flutter for android 
+Link is: https://docs.flutter.dev/get-started/install/windows
+
+There is an option: (2 tabs)
+1. Use VS Code 
+2. Download and install --> Download this Zip folder
+3. Set the bin in environmental variables
+4. cmd: flutter doctor 
+5. install flutter extension in VS Code
+
