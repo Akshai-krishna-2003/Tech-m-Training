@@ -1,7 +1,0 @@
-Widget -> A complete page or component/ui unit
-
-
-Scaffold -> to return entire page
-
-StateLess or State extended class we need to do
-

@@ -1,0 +1,10 @@
+Js is non blocking language 
+It will be like if some line takes time to execute it will give chance to text lines that is easy to execute
+
+Promise key word for this reason
+
+
+pubspec.yaml 
+Add these into dependencies section
+http: ^0.13.3
+http_client: any

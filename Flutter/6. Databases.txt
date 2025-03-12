@@ -1,0 +1,8 @@
+Use SQLite database
+
+dependencies to add: 
+sqflite: ^2.0.0+3
+path: ^1.8.0
+
+https://tekndrabucket.s3.ap-south-1.amazonaws.com/fruits.png
+
