@@ -94,3 +94,6 @@ migrate_working_dir/
 # Node Modules (if using Firebase, or other npm packages)
 **/node_modules/
 **/lib/generated_plugin_registrant.dart
+
+
+Flutter/api key.txt
