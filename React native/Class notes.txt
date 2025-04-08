@@ -1,0 +1,7 @@
+React native app creation: npx create-expo-app sampleapp --template blank
+
+Application starts from index.js 
+
+Run react native app use: npm run android
+
+npx expo  install expo-contacts

@@ -1,0 +1,151 @@
+CMS:
+* The content management system is used to create, edit, delete, and update digital assets.
+* Developers or tech team create functionality, and the nontech guy can publish the content and reuse it again and again without technical knowledge
+
+
+CMS:
+1. Traditional cms 
+	{
+		1.1 Coupled cms      --> Tightly binded to rendering functionality  
+		1.2 Decoupled cms   --> Not tightly binded 
+	}
+
+2. Headless cms  --> Can deliver only Content 
+3. Hybrid cms    --> Mix of Traditional and headless (AEM)
+
+
+Functionality of cms:
+	1. cms 
+	2. Digital asset mgmt. 
+	3. user/permission mgmt.
+	4. Headless feature
+	5. Build and run websites
+
+
+AEM: is a content management system 
+
+Types of aem:
+	1. Stand alone / On premise (Have a jar file instance)
+	2. Cloud based (AEM as a cloud service) {1. Standalone JAR/Local  2. Sandbox}
+
+
+AEM functionalities primary:
+1. Sites 
+2. Assets 
+3. Forms - Add on package 
+4. User permissions 
+5. Servlet/OSGi 
+3. Build and run websites 
+
+
+Aem instance terminologies 
+
+1. Aem instance - It is the running AEM software 
+2. Environment/Run mode - It is a run mode (will talk down)
+3. Dispatcher - Between the end user and aem we have web server. It is a tiny module in a web server that sits in the web server and translates aem and end user
+
+
+Aem instance can be identified by two types
+1. Type of instance 
+2. Environment/RunModes
+
+Aem instance types:
+1. Author  -- Create content instance
+2. Publish -- Serve content instance 
+
+Environment runmodes types:
+1. dev
+2. qa
+3. stage
+4. prod
+5. Any name 
+
+
+(All contents and assets here)(Author) --(replicate/publish)--> (Publish) ---> (End user)
+
+
+
+AEM environment at a high level:
+
+1. Author and two publish
+2. AEM doesn't have a cache request 
+3. No way distribute to load
+4. To solve it, we have a web server, and inside it, there is a dispatcher who is a mediator  between the publisher and the web server
+5. Load balancer
+
+
+AEM software
+1. Jar file
+2. License.properties 
+
+
+AEM installation prequsite
+1. AEM 6.5 Stand alone - Java 8
+2. Cloud instance - java 11 
+
+AEM installation option 
+10 Default installation -- Author - 4502
+Jar rename 
+Start script 
+
+AEM installation with jar rename 
+aem-author-p4502
+(aem)-(author/publish)-(p)(port-number)
+
+Then installation which is already done 
+
+In crx-quickstart some folders are there to understand like
+1. Logs - All logs will be saved here 
+Initially all information goes into error.logs 
+2. Start files  in bin 
+quickstart.bat for windows will do like this 
+
+AEM section:
+1. Start console 
+2. System console / Felix console 
+3. Dev console / crx/de
+4. Package manager 
+
+
+Start console
+* After password you come to start screen 
+* Content / navigation 
+* tools 
+
+System console / Felix console 
+* Another screen named apache felix console which is 
+localhost:4502/system/console
+this container console is not for aem it is for apache 
+* All java/bundles (backend) is installed here only 
+
+crx/de
+* tiny ide (dont write there in it) (to check data and information in repository level)
+localhost:4502/crx/de
+* apps -> Project specific code 
+* bin -> internal 
+* conf -> Configuration
+* content -> content (it has a sites)
+* home -> users and groups
+* libs -> aem code (should not write anything under this)
+
+Package manager
+localhost:4502/crx/packmgr
+* here you can create and upload package etc 
+* What you wanna add in package is in filter 
+
+
+Start screen in detail
+* Navigation 
+* Tools 
+
+* projects - Define translation jobs etc..
+* sites - to maintain sites 
+* assets to upload documents
+
+
+
+ 
+
+
+
+

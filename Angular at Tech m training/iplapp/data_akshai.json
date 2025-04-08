@@ -89,6 +89,15 @@
       "trophies": 1,
       "homeGround": "Narendra Modi Stadium",
       "logo": "http://localhost:8090/ipl/gt.png"
+    },
+    {
+      "id": "f204",
+      "name": "Kochi Tuskers Kerala",
+      "owner": "Sachin",
+      "captain": "Sanju Samson",
+      "homeGround": "Kochi",
+      "trophies": 0,
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Kochi_Tuskers_Kerala_Logo.svg/1200px-Kochi_Tuskers_Kerala_Logo.svg.png"
     }
   ],
   "players": [
@@ -191,6 +200,16 @@
       "runs": 2200,
       "wickets": 0,
       "image": "http://localhost:8090/ipl/shubman_gill.jpg"
+    },
+    {
+      "id": "6331",
+      "name": "David Warner",
+      "team": "Sun Rises Hyderbad",
+      "role": "Batsman",
+      "matches": 100,
+      "runs": 10000,
+      "wickets": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdugj8kyAjD1IKk_QQ3ZAKCUVUB0-eICceGA&s"
     }
   ]
 }

@@ -1,0 +1,149 @@
+AEM is an experience manager-like content management system
+
+Maven Archetype - Project template that helps developers quickly set up a project
+
+Technical Architecture of AEM
+Backend technologies (AEM Author and Publish Instance)
+1. Java and OSGI - Core backend of ARM OSGI(Open  Service Gateway Initiative)
+2. Apache Sling - Request-based web framework 
+3. JCR (Java Content Repository) - Stores contents and metadata in a hierarchical structure 
+4. Apache Jackrabbit oak - Underlying implementation of JCR for storage 
+5. AEM dispatcher - A caching and security layer that improves performance and protects AEM instances 
+
+Front end technologies
+1. HTML, CSS, JS - templating and styling AEM components 
+2. Angular and React 
+3. HTL (HTML Template Language)
+4. Touch UI and Classic UI
+
+Pre requisites for AEM 
+1. Java 11
+2. Apache maven 3.3.9+
+3. AEM SDK (or an existing AEM instance running on localhost:4502
+
+Open cmd as run as administrator and run this command 
+
+Maven Command to Create an AEM Project (On-Premises - AEM 6.5.20):
+Use the following command to generate an AEM project for an on-premises instance:
+
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate ^
+-DarchetypeGroupId=com.adobe.aem ^
+-DarchetypeArtifactId=aem-project-archetype ^
+-DarchetypeVersion=51 ^
+-DaemVersion="6.5.20" ^
+-DappTitle="My Training" ^
+-DappId="MyTraining" ^
+-DgroupId="com.mytraining"
+
+Locate your project and open it using IntelliJ / VS Code
+
+For now, remove the dispatcher module because we don't need it now 
+
+Also, remove its reference from the pom.xml
+
+
+Understanding structure of project:
+1. core - has java code for business logic 
+2. it.test - for test  
+3. ui.apps - stores aem components, templates and policies 
+4. ui.content - sample content like pages 
+5. ui.config - related to OSGI 
+6. ui.frontend - frontend logic like react etc here 
+
+
+After making project lets build the project:
+Command for it: mvn clean install
+
+Now to deploy the project on local instance we use:
+mvn clean install -PautoInstallPackage
+
+
+Open localhost:4502 after opening that jar file and you can see your project there 
+
+Go to my site -> us -> en 
+You can see your hello world component there 
+
+To find helloworld component 
+Go to 
+ui.apps -> src -> main -> content -> jcr_root -> apps -> mysite -> components -> helloworld -> helloworld.html
+
+core -> has all java files for you to manipulate 
+
+
+crxde lite
+
+Purpose: CRXDE Lite in AEM serves as a browser-based tool allowing developers to directly view, edit, and manage the AEM repository, including content, components, templates, and more, making it a valuable tool for development and debugging. 
+How to navigate -> Go to author instance -> Tools -> crxde lite
+
+AEM components:
+* Basic building blocks of an AEM website. They define how content iss displayed and allow authors to manage content dynamically.
+* Components can be simple like text or image components or complex like carousels, featured sections or forms 
+* components are reusable
+
+/myproject/components/featuredcard 
+
+1. content.xml       -> component definition
+2. _cq_dialog.xml    -> AEM dialog for content entry 
+3. featuredcard.html -> HTL script for rendering 
+4. featuredcard.js   -> JavaScript for interactivity 
+5. featuredcard.css  -> CSS for styling 
+6. Sling model (Java) -> Backend logic to fetch data from JCR
+
+To create an AEM component 
+Go to ui.apps ->
+src/main/content -> jcr_root/apps/mysite ->
+components ->
+
+Go here and then create a folder that you want to create a component 
+
+Lets create a folder named featuredcard inside the told folder structure
+create a file named -> .content.xml inside the folder 
+
+This file is done for the following reasons:
+	1. It defines the component including the name title and other necessary things of the component
+	
+
+Use the hello world component .content.xml and edit it 
+
+Now what is aem dialogue 
+Aem dialogue allows authors to put contents dynamically 
+
+
+how to create aem dialogue for our aem card 
+create a folder named _cq_dialog
+inside that create a file named .content.xml 
+
+Use the previous helloworld component's _cq_dialog
+
+To change the .content.xml according to your needs 
+
+Aem components are build using granite ui -> Framework provided by adobe 
+
+Especially for forms and user interfaces 
+
+now create featuredcard.html to directly get the values from those properties 
+Here we use properties object to get them 
+
+in htl -> properties is a global object 
+Directly from jcr
+
+Verify from crx de
+
+Go to page and place it here 
+You can delete the existing component and put it there and verify it there 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

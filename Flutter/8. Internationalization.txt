@@ -1,0 +1,17 @@
+The app can be changed to any language called localization/internationalization.
+
+To use multiple translations for the application
+
+1. Add dependencies 
+flutter_localizations:
+    sdk: flutter
+intl: 0.19.0
+
+2. Create assets
+Assets to have the JSON files for translations
+
+add this in pubspec.yaml
+assets:
+    - assets/l10n/
+
+Continue then 

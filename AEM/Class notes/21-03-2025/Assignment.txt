@@ -1,0 +1,10 @@
+Run this command: 
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=51 -D appTitle="myTraining" -D appId="myTraining" -D groupId="com.myTraining" -D aemVersion=6.5.5 -D includeExamples=n -D includeErrorHandler=y
+
+21-3-25
+Create News room page component using base page compoennt
+Create custom page property as NEWS configurations where I can author the default news image. Read More CTA for News Article
+Create News room template type by using news room page component
+Create News Room Template using news room template type.
+Apply the styling to news/ hello world component from ui.frontend folder
+Additionally you can create custom style to apply above styling to hello world or news component.

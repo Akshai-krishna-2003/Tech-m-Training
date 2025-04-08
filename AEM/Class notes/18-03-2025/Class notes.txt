@@ -1,0 +1,32 @@
+Dispatcher - Dedicated server for user (intermediate between publisher and end user) (Load balance and security too)
+Author - to build design or whatever 
+Publisher - Publish data 
+
+Author instance - Our side things to develop
+
+
+
+End user - Dispatcher (Sometimes handles cache too) - Publish environment 
+
+
+Now we have to add a new publisher folder named Publisher and paster the jar file into the folder that was downloaded yesterday 
+
+Rename it as publish in the jar where author is there
+
+Then run the command: 
+
+<blank>
+
+
+Maven life cycle
+What is pom.xml file and why we use it
+How dependencies work?
+Check the maven repository.
+How all modules build using maven
+Can we build specific module?
+Role of ui.apps and ui.content and ui.frontend folder?
+Why we are using run mode?
+What is publish env?
+Why we are using dispatcher?
+From where can access the crx/de?
+

@@ -1,0 +1,26 @@
+To create a project: 
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=51 -D appTitle="myTraining" -D appId="myTraining" -D groupId="com.myTraining" -D aemVersion=6.5.5 -D includeExamples=n -D includeErrorHandler=y
+
+or 
+
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=51 -D appTitle="myTraining" -D appId="myTraining" -D groupId="com.myTraining" -D aemVersion=6.5.5 -D includeExamples=n -D includeErrorHandler=y
+
+This command: mvn clean install -PautoInstallPackage -Dmaven.test.skip=true
+
+It will create the dispatcher. 
+But configuration-wise, we need to take the care 
+
+https://drive.google.com/file/d/1wF4lB945kYnnDrWOisoTI_OrIxOeOBAs/view?usp=sharing
+
+mvn clean install -PautoInstallPackage -Dmaven.test.skip=true
+
+
+19-3-25
+1.What is DAM and why we use it?
+2Create one folder inside our project folder and follow the path: “/content/dam/myTraining/us/en-us” and upload 2 images and author those images on page using image component as we see today.
+3 What is renditions? Check the renditions for 2 images which we had uploaded
+4.Add two fields in hello world component with name FirstName and Last Name and print the values on hello world.html component  using properties
+5. Give try using @ValueMapValue annotation on HelloWorldModel  sling java model “com.myTraining.core.models.HelloWorldModel”
+6.Why we are using package manager and jar create package for the hello world component and 2 images what we have uploaded
+There should be 2 packages 1 for dam which is images and 2 one is for helloworld component
+7Configure replication agent and publish the page from author to publish env(4502(author)—>4503(publish))

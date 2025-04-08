@@ -1,0 +1,23 @@
+1. Need Java 11 to run this 
+2. Download this and put somewhere 
+https://drive.google.com/file/d/1PCOw2aH8XMUO9swRLywKJ3K2HVxNuQY-/view?usp=sharing
+3. Download and run this command:
+java  -jar aem-author-p4502.jar
+4. My password is admin
+5. http://localhost:4502/aem/start.html
+
+
+This is a content management system
+
+AEM - ADOBE EXPERIENCE MANAGER
+
+Example websites built on AEM
+https://www.mcdonalds.com/us/en-us.html
+https://www.infinitiusa.com/
+https://www.fiat.com/
+https://www.autodesk.com/
+https://www.solventum.com/en-us/home/
+https://subway.in/
+
+
+http://localhost:4503/crx/de
